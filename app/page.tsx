@@ -8,8 +8,11 @@ import imgHeader from "@/public/imgHeader.png";
 export default function Home() {
   return (
     <>
-      {/* <Head></Head> */}
       {/* Header */}
+      <Head>
+        <title>La Ferme de Mondet</title>
+        <meta property="og:title" content="La ferme de Mondet | Volailles" />
+      </Head>
       <div className="mr-20 ml-20 h-screen">
         <div className="h-20 border-b border-FFF5D0">
           <Image
