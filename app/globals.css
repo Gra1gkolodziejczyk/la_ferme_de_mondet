@@ -7,4 +7,10 @@
 body {
   background-color: #0F222D;
   font-family: "Alata", sans-serif;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  color: #FFF5D0;
 }
