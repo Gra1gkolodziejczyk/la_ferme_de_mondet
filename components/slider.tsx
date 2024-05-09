@@ -26,31 +26,29 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
 
   return (
     <>
-      <>
-        <div className="flex justify-center items-center content-center text-center self-center">
-          <h2 className="text-6xl mt-32">Volailles</h2>
-        </div>
-        <div className="ml-12 mr-10 flex items-center content-center self-center text-center relative">
-          <FiChevronLeft
-            onClick={prevSlide}
-            className="text-white text-7xl cursor-pointer"
-          />
-          {slides.map((slide, index) => (
-            <div key={index} className="relative">
-              <Slide
-                key={index}
-                image={slide.image}
-                description={slide.description}
-                isActive={index === currentSlide}
-              />
-            </div>
-          ))}
-          <FiChevronRight
-            onClick={nextSlide}
-            className="text-white text-7xl cursor-pointer"
-          />
-        </div>
-      </>
+      <div className="flex justify-center items-center content-center text-center self-center">
+        <h2 className="text-6xl mt-32">Volailles</h2>
+      </div>
+      <div className="ml-12 mr-10 flex items-center content-center self-center text-center relative">
+        <FiChevronLeft
+          onClick={prevSlide}
+          className="text-white text-7xl cursor-pointer"
+        />
+        {slides.map((slide, index) => (
+          <div key={index} className="relative">
+            <Slide
+              key={index}
+              image={slide.image}
+              description={slide.description}
+              isActive={index === currentSlide}
+            />
+          </div>
+        ))}
+        <FiChevronRight
+          onClick={nextSlide}
+          className="text-white text-7xl cursor-pointer"
+        />
+      </div>
     </>
   );
 };

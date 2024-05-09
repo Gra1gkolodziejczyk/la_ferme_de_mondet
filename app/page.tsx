@@ -3,7 +3,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Slider from "@/components/slider";
-import elevage from "@/public/elevage.png";
+import elevage from "@/public/187465019.jpg";
 import fermier from "@/public/fermier.png";
 import footerImage from "@/public/footerImage.png";
 import imageFerme from "@/public/image.png";
@@ -164,7 +164,7 @@ const slides = [
 ];
 
 const Home: React.FC = () => {
-  const [selectedCity, setSelectedCity] = useState("");
+  const [selectedCity, setSelectedCity] = useState<string>("Bordeaux");
 
   interface CityImages {
     [key: string]: string;
@@ -231,7 +231,7 @@ const Home: React.FC = () => {
         <Image
           src={imageFerme}
           alt="La ferme de Mondet | Ferme"
-          className="hidden md:block absolute bottom-0 -z-10 -ml-20 pb-36"
+          className="flex-none hidden md:block absolute bottom-0 -z-10 -ml-20 pb-36"
           width={10000}
           height={1000}
         />
@@ -269,7 +269,7 @@ const Home: React.FC = () => {
         <div className="w-full md:w-1/3 flex flex-col justify-center items-center text-center px-6 py-10">
           <h1 className="text-black text-2xl mb-6">CARTE</h1>
           <Image
-            src={selectedCity ? cityImages[selectedCity] : fermier}
+            src={selectedCity && cityImages[selectedCity]}
             alt={`la ferme de Mondet | ${selectedCity}`}
             width={500}
             height={500}
@@ -381,14 +381,10 @@ const Home: React.FC = () => {
               height={300}
             />
             <p className="text-center md:text-left md:pl-8 mt-6 md:mt-0">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab neque
-              recusandae accusantium eum aliquid at sit, ad fugit molestias nisi
-              suscipit nihil? Iure debitis ea obcaecati in repellat dolor
-              doloribus. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Necessitatibus sequi libero, asperiores nemo minus
-              blanditiis cumque minima veritatis deserunt quam repudiandae
-              reprehenderit ipsam accusamus? Maxime modi sit deleniti.
-              Aspernatur, ratione!
+              Situé à Tonneins 47 Lot et Garonne,
+              <br />
+              Nous pouvons vous fournir toutes les volailles,sur simple demande
+              de votre part.
             </p>
           </div>
         </div>
