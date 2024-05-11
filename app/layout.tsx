@@ -5,12 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "La ferme de Mondet",
   description: "",
-  robots: {
-    googleBot: {
-      follow: true,
-    },
-    follow: true,
-  },
+  robots: "index, follow",
   authors: [
     {
       name: "Graig KOLODZIEJCZYK",
@@ -20,6 +15,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
   },
+  keywords: [
+    "la ferme de Mondet",
+    "vente volailles tonneins",
+    "tonneins volailles",
+    "tonneins 47400",
+    "tonneins",
+  ],
 };
 
 export default function RootLayout({
