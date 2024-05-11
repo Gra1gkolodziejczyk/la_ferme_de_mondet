@@ -5,6 +5,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "La ferme de Mondet",
   description: "",
+  robots: {
+    googleBot: {
+      follow: true,
+    },
+    follow: true,
+  },
   authors: [
     {
       name: "Graig KOLODZIEJCZYK",
