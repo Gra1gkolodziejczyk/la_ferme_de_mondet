@@ -2,6 +2,7 @@
 
 import Head from "next/head";
 import Image from "next/image";
+import type { Metadata } from "next";
 import Slider from "@/components/slider";
 import elevage from "@/public/187465019.jpg";
 import fermier from "@/public/fermier.png";
@@ -162,6 +163,20 @@ const slides = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus veniam aut, labore atque molestias quaerat eligendi illo, sapiente, hic non quod! Vitae quam doloremque eligendi dicta accusamus nemo repellat aliquam",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "La ferme de Mondet",
+  description: "",
+  authors: [
+    {
+      name: "Graig KOLODZIEJCZYK",
+      url: "https://www.linkedin.com/in/graig-kolodziejczyk-1482241b8/",
+    },
+  ],
+  openGraph: {
+    type: "website",
+  },
+};
 
 const Home: React.FC = () => {
   const [selectedCity, setSelectedCity] = useState<string>("Bordeaux");
