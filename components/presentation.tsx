@@ -20,7 +20,7 @@ const Presentation = () => {
             color="secondary"
             className="text-center md:text-left md:pr-8 mb-6 md:mb-0"
           >
-            Je m&apos;appelle Monsieur Mondet <br />
+            Je m&apos;appelle Monsieur Rémi Duprat <br />
             et je vends mes volailles depuis plusieurs années selon les saisons
             et les besoins de mes clients.
           </Typography>
