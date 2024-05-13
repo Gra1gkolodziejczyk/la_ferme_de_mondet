@@ -1,15 +1,12 @@
-import { AppBar, Container, Typography } from "@mui/material";
-
-import Head from "next/head";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
 import Horaires from "@/components/horaires";
 import Image from "next/image";
 import { Metadata } from "next";
+import Presentation from "@/components/presentation";
 import Slider from "@/components/slider";
-import elevage from "@/public/187465019.jpg";
-import fermier from "@/public/fermier.png";
-import footerImage from "@/public/footerImage.png";
+import { Typography } from "@mui/material";
 import imageFerme from "@/public/image.png";
-import imgHeader from "@/public/imgHeader.png";
 
 export const metadata: Metadata = {
   title: "La ferme de Mondet",
@@ -190,45 +187,8 @@ const slides = [
 const Home: React.FC = () => {
   return (
     <>
-      <Head>
-        <title>La Ferme de Mondet</title>
-        <meta property="og:title" content="La ferme de Mondet | Volailles" />
-      </Head>
-      <AppBar position="fixed" color="primary" className="z-1000 h-36">
-        <Container maxWidth="xl">
-          <Image
-            alt="La ferme de Mondet | logo"
-            src={imgHeader}
-            width={120}
-            height={120}
-            className="absolute top-0 m-5"
-          />
-          <div className="flex justify-center text-center content-center mt-16">
-            <Typography
-              variant="h2"
-              color="secondary"
-              className="mr-7 text-2xl cursor-pointer hover:text-yellow-500"
-            >
-              Accueil
-            </Typography>
-            <Typography
-              variant="h2"
-              color="secondary"
-              className="mr-7 text-2xl cursor-pointer hover:text-yellow-500"
-            >
-              Présentation
-            </Typography>
-            <Typography
-              variant="h2"
-              color="secondary"
-              className="text-2xl cursor-pointer hover:text-yellow-500"
-            >
-              Volailles
-            </Typography>
-          </div>
-        </Container>
-      </AppBar>
-      <div className="max-h-screen">
+      <Header />
+      <div id="accueil" className="max-h-screen">
         <div className="flex justify-center items-center content-center text-center mt-36 z-40">
           <Typography variant="h1" color="secondary" className="mt-20">
             Bienvenue à la ferme de Mondet !
@@ -240,66 +200,10 @@ const Home: React.FC = () => {
           className="bottom-0 mt-7"
         />
       </div>
-
       <Horaires />
-
-      <div className="flex flex-col justify-center items-center mt-10">
-        <Typography variant="h1" color="secondary" className="text-6xl">
-          Présentation
-        </Typography>
-        <div className="flex flex-col md:flex-col justify-center items-center mt-10 px-4">
-          <div className="flex flex-col md:flex-row justify-center items-center md:ml-8 md:mr-8">
-            <Typography
-              variant="body1"
-              color="secondary"
-              className="text-center md:text-left md:pr-8 mb-6 md:mb-0"
-            >
-              Je m&apos;appelle Monsieur Mondet <br />
-              et je vends mes volailles depuis plusieurs années selon les
-              saisons et les besoins de mes clients.
-            </Typography>
-            <Image
-              className="rounded-xl mt-6 md:mt-0 md:ml-8"
-              alt="La ferme de Mondet | Fermier"
-              src={fermier}
-              width={400}
-              height={300}
-            />
-          </div>
-          <div className="flex flex-col md:flex-row justify-center items-center mt-10 md:ml-8 md:mr-8">
-            <Image
-              className="rounded-xl"
-              alt="La ferme de Mondet | Fermier"
-              src={elevage}
-              width={400}
-              height={300}
-            />
-            <Typography
-              variant="body1"
-              color="secondary"
-              className="text-center md:text-left md:pl-8 mt-6 md:mt-0"
-            >
-              Situé à Tonneins 47 Lot et Garonne,
-              <br />
-              Nous pouvons vous fournir toutes les volailles,sur simple demande
-              de votre part.
-            </Typography>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <Slider slides={slides} />
-      </div>
-
-      <div className="h-72 mt-20 bg-[#FFF5D0] flex items-center justify-center text-center content-center">
-        <Image
-          alt="la ferme de mondet | Logo"
-          src={footerImage}
-          width={300}
-          height={300}
-        />
-      </div>
+      <Presentation />
+      <Slider slides={slides} />
+      <Footer />
     </>
   );
 };

@@ -27,7 +27,10 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
 
   return (
     <>
-      <div className="flex justify-center items-center content-center text-center self-center">
+      <div
+        id="volailles"
+        className="flex justify-center items-center content-center text-center self-center"
+      >
         <Typography variant="h2" className="text-6xl mt-32">
           Volailles
         </Typography>
