@@ -4,6 +4,7 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import React, { useState } from "react";
 
 import Slide from "./slide";
+import { Typography } from "@mui/material";
 
 interface SliderProps {
   slides: { image: string; description: string }[];
@@ -27,7 +28,9 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
   return (
     <>
       <div className="flex justify-center items-center content-center text-center self-center">
-        <h2 className="text-6xl mt-32">Volailles</h2>
+        <Typography variant="h2" className="text-6xl mt-32">
+          Volailles
+        </Typography>
       </div>
       <div className="ml-12 mr-10 flex items-center content-center self-center text-center relative">
         <FiChevronLeft

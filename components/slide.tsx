@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Typography } from "@mui/material";
 
 interface SliderProps {
   image: string;
@@ -18,8 +19,12 @@ const Slide: React.FC<SliderProps> = ({ image, description, isActive }) => {
           height={500}
         />
         <div className="flex flex-col justify-start text-start content-start items-start">
-          <h2 className="text-4xl mb-4">Description</h2>
-          <p className="text-white text-xl">{description}</p>
+          <Typography variant="h2" className="text-4xl mb-4">
+            Description
+          </Typography>
+          <Typography variant="body1" className="text-white text-xl">
+            {description}
+          </Typography>
         </div>
       </div>
     </>
