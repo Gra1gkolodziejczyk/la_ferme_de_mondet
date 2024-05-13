@@ -18,6 +18,10 @@ export const metadata: Metadata = {
       name: "Graig KOLODZIEJCZYK",
       url: "https://www.linkedin.com/in/graig-kolodziejczyk-1482241b8/",
     },
+    {
+      name: "Cédric VIDALIE",
+      url: "https://www.linkedin.com/in/c%C3%A9dric-vidalie-035744230/",
+    },
   ],
   openGraph: {
     type: "website",
