@@ -12,9 +12,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <ThemeProvider theme={theme}>
-        <body>{children}</body>
-      </ThemeProvider>
+      <body>
+        <ThemeProvider theme={theme}>{children}</ThemeProvider>
+      </body>
     </html>
   );
 }
