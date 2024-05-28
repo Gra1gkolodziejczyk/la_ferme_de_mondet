@@ -12,7 +12,10 @@ export const metadata: Metadata = {
   title: "La ferme de Mondet",
   description:
     "La ferme de Mondet, située à Tonneins, vous permet d'avoir un visuel sur les volailles de qualité qu'elle vend, ainsi que sa localisation. Contacter le pour en savoir plus sur les prix des volailles.",
-  robots: "index, follow",
+  robots: {
+    follow: true,
+    index: true,
+  },
   authors: [
     {
       name: "Graig KOLODZIEJCZYK",
