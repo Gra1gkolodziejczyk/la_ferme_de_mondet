@@ -103,7 +103,9 @@ const Horaires = () => {
             >
               Bordeaux
             </Typography>
-            <Typography className="text-black text-xl text-bold">1H</Typography>
+            <Typography variant="h2" className="text-black text-xl text-bold">
+              1H
+            </Typography>
           </div>
           <div className="flex justify-between mb-2">
             <Typography
