@@ -18,11 +18,8 @@ const Slide: React.FC<SliderProps> = ({ image, description, isActive }) => {
           width={500}
           height={500}
         />
-        <div className="flex flex-col justify-start text-start content-start items-start">
-          <Typography variant="h2" className="text-4xl mb-4">
-            Description
-          </Typography>
-          <Typography variant="body1" className="text-white text-xl">
+        <div className="flex flex-col justify-center text-center content-center items-center">
+          <Typography variant="body1" className="text-white text-4xl">
             {description}
           </Typography>
         </div>
