@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     "tonneins volailles",
     "tonneins 47400",
     "tonneins",
+    "Rémi Duprat",
+    "poules Tonneins",
+    "poules pondeuses tonneins",
   ],
 };
 
