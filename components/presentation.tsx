@@ -13,22 +13,15 @@ const Presentation = () => {
         Présentation
       </Typography>
       <div className="flex flex-col md:flex-col justify-center items-center mt-10 px-4">
-        <div className="mt-32 mb-32 flex flex-col md:flex-row justify-center items-center self-center content-center md:ml-8 md:mr-8">
+        <div className="mt-32 mb-32 flex md:flex-row justify-center items-center self-center content-center md:ml-8 md:mr-8">
           <Typography
             variant="body1"
             color="secondary"
-            className="text-4xl flex items-center content-center text-center md:text-left md:pr-8 mb-6 md:mb-0 "
+            className="text-4xl md:text-left md:pr-8 mb-6 md:mb-0 "
           >
             Je m&apos;appelle Rémi Duprat et je vends mes volailles depuis
             plusieurs années selon les saisons et les besoins de mes clients.
           </Typography>
-          {/* <Image
-            className="rounded-xl mt-6 md:mt-0 md:ml-8"
-            alt="La ferme de Mondet | Fermier"
-            src={fermier}
-            width={400}
-            height={300}
-          /> */}
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-10 md:ml-8 md:mr-8">
           <Image
