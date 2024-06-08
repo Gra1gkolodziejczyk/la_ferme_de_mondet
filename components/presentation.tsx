@@ -18,7 +18,7 @@ const Presentation = () => {
           <Typography
             variant="body1"
             color="secondary"
-            className="text-center md:text-left md:pr-8 mb-6 md:mb-0"
+            className="text-2xl text-center md:text-left md:pr-8 mb-6 md:mb-0 "
           >
             Je m&apos;appelle Rémi Duprat <br />
             et je vends mes volailles depuis plusieurs années selon les saisons
@@ -43,7 +43,7 @@ const Presentation = () => {
           <Typography
             variant="body1"
             color="secondary"
-            className="text-center md:text-left md:pl-8 mt-6 md:mt-0"
+            className="text-center text-2xl md:text-left md:pl-8 mt-6 md:mt-0"
           >
             Situé à Tonneins 47 Lot et Garonne,
             <br />

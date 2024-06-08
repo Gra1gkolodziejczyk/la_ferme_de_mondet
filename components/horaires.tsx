@@ -27,6 +27,23 @@ const Horaires = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between h-auto bg-[#FFF5D0]">
       <div className="w-full md:w-1/3 flex flex-col justify-center items-center text-center md:text-left md:items-start px-6 py-10">
+        <div className="w-full md:w-2/3 flex flex-col">
+          <Typography
+            variant="h1"
+            color="primary"
+            className="text-xl mb-2 font-bold underline"
+          >
+            HORAIRES
+          </Typography>
+          <div className="flex flex-col">
+            <div className="flex justify-between mb-2">
+              <Typography variant="h2" className="text-black text-xl">
+                Sur Rendez-vous
+              </Typography>
+            </div>
+          </div>
+        </div>
+        <div className="w-full h-1 bg-black mb-6"></div>
         <Typography
           variant="h1"
           color="primary"
@@ -47,42 +64,6 @@ const Horaires = () => {
           <Typography variant="h2" className="text-black text-xl">
             lafermedemondet@gmail.com
           </Typography>
-        </div>
-        <div className="w-full h-1 bg-black mb-6"></div>
-        <div className="w-full md:w-2/3 flex flex-col">
-          <Typography
-            variant="h1"
-            color="primary"
-            className="text-xl mb-2 font-bold underline"
-          >
-            HORAIRES
-          </Typography>
-          <div className="flex flex-col">
-            <div className="flex justify-between mb-2">
-              <Typography variant="h2" className="text-black text-xl">
-                Lundi
-              </Typography>
-              <Typography variant="h2" className="text-black text-xl">
-                15h - 18h
-              </Typography>
-            </div>
-            <div className="flex justify-between mb-2">
-              <Typography variant="h2" className="text-black text-xl">
-                Mercredi
-              </Typography>
-              <Typography variant="h2" className="text-black text-xl">
-                15h - 18h
-              </Typography>
-            </div>
-            <div className="flex justify-between">
-              <Typography variant="h2" className="text-black text-xl">
-                Vendredi
-              </Typography>
-              <Typography variant="h2" className="text-black text-xl">
-                15h - 18h
-              </Typography>
-            </div>
-          </div>
         </div>
       </div>
 
