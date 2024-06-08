@@ -132,7 +132,7 @@ const Horaires = () => {
               }`}
               onClick={() => handleCityClick("Monteauban")}
             >
-              Monteauban
+              Montauban
             </Typography>
             <Typography variant="h2" className="text-black text-xl">
               1H
