@@ -35,24 +35,31 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
           Volailles
         </Typography>
       </div>
-      <div className="ml-12 mr-10 flex items-center content-center self-center text-center relative">
+      <div className="relative flex items-center justify-between mx-12">
         <FiChevronLeft
           onClick={prevSlide}
-          className="text-white text-7xl cursor-pointer"
+          className="absolute left-0 text-white text-7xl cursor-pointer z-10 transform -translate-y-1/2 top-1/2 md:left-4"
         />
-        {slides.map((slide, index) => (
-          <div key={index} className="relative">
-            <Slide
+        <div className="w-full flex justify-center items-center">
+          {slides.map((slide, index) => (
+            <div
               key={index}
-              image={slide.image}
-              description={slide.description}
-              isActive={index === currentSlide}
-            />
-          </div>
-        ))}
+              className={`relative ${
+                index === currentSlide ? "block" : "hidden"
+              }`}
+            >
+              <Slide
+                key={index}
+                image={slide.image}
+                description={slide.description}
+                isActive={index === currentSlide}
+              />
+            </div>
+          ))}
+        </div>
         <FiChevronRight
           onClick={nextSlide}
-          className="text-white text-7xl cursor-pointer"
+          className="absolute right-0 text-white text-7xl cursor-pointer z-10 transform -translate-y-1/2 top-1/2 md:right-4"
         />
       </div>
     </>

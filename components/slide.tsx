@@ -14,11 +14,13 @@ const Slide: React.FC<SliderProps> = ({ image, description, isActive }) => {
         <Image
           src={image}
           alt="Slide"
-          className="flex justify-center items-center content-center self-center mb-8 rounded-3xl"
+          className="mb-8 rounded-3xl"
           width={500}
           height={500}
+          layout="responsive"
+          objectFit="contain"
         />
-        <div className="flex flex-col justify-center text-center content-center items-center">
+        <div className="flex flex-col justify-center text-center items-center mt-20">
           <Typography
             variant="body1"
             className="text-white text-4xl mt-14 mb-14"
