@@ -21,12 +21,7 @@ const Slide: React.FC<SliderProps> = ({ image, description, isActive }) => {
           objectFit="contain"
         />
         <div className="flex flex-col justify-center text-center items-center mt-20">
-          <Typography
-            variant="body1"
-            className="text-white text-4xl mt-14 mb-14"
-          >
-            {description}
-          </Typography>
+          <p className="text-white text-4xl mt-14 mb-14">{description}</p>
         </div>
       </div>
     </>

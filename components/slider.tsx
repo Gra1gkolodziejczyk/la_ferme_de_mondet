@@ -31,9 +31,7 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
         id="volailles"
         className="flex justify-center items-center content-center text-center self-center"
       >
-        <Typography variant="h2" className="text-6xl mt-32">
-          Volailles
-        </Typography>
+        <h2 className="text-6xl mt-32">Volailles</h2>
       </div>
       <div className="relative flex items-center justify-between mx-12">
         <FiChevronLeft
