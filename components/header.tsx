@@ -118,7 +118,7 @@ const Header = () => {
             variant="link"
             className="text-yellow-200 hover:text-yellow-500"
           >
-            Presentation
+            Présentation
           </Button>
           <Button
             variant="link"
