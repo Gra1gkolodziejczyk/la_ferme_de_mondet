@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 
+import { Button } from "./ui/button";
 import Image from "next/image";
 
 const Horaires = () => {
@@ -63,69 +64,75 @@ const Horaires = () => {
         </h1>
         <div className="w-full md:w-2/3 flex flex-col">
           <div className="flex justify-between mb-2">
-            <h2
+            <Button
+              variant="link"
               className={`text-black text-xl cursor-pointer ${
                 selectedCity === "Bordeaux" ? "underline" : ""
               }`}
               onClick={() => handleCityClick("Bordeaux")}
             >
               Bordeaux
-            </h2>
+            </Button>
             <h2 className="text-black text-xl text-bold">1H</h2>
           </div>
           <div className="flex justify-between mb-2">
-            <h2
+            <Button
+              variant="link"
               className={`text-black text-xl cursor-pointer ${
                 selectedCity === "Monteauban" ? "underline" : ""
               }`}
               onClick={() => handleCityClick("Monteauban")}
             >
               Montauban
-            </h2>
+            </Button>
             <h2 className="text-black text-xl">1H</h2>
           </div>
           <div className="flex justify-between mb-2">
-            <h2
+            <Button
+              variant="link"
               className={`text-black text-xl cursor-pointer ${
                 selectedCity === "Montdemarsan" ? "underline" : ""
               }`}
               onClick={() => handleCityClick("Montdemarsan")}
             >
               Mont de marsan
-            </h2>
+            </Button>
             <h2 className="text-black text-xl">1H</h2>
           </div>
           <div className="flex justify-between mb-2">
-            <h2
+            <Button
+              variant="link"
               className={`text-black text-xl cursor-pointer ${
                 selectedCity === "Auch" ? "underline" : ""
               }`}
               onClick={() => handleCityClick("Auch")}
             >
               Auch
-            </h2>
+            </Button>
             <h2 className="text-black text-xl">1H30</h2>
           </div>
           <div className="flex justify-between mb-2">
-            <h2
+            <Button
+              variant="link"
               className={`text-black text-xl cursor-pointer ${
                 selectedCity === "Cahors" ? "underline" : ""
               }`}
               onClick={() => handleCityClick("Cahors")}
             >
               Cahors
-            </h2>
+            </Button>
             <h2 className="text-black text-xl">1H30</h2>
           </div>
           <div className="flex justify-between">
-            <h2
+            <Button
+              variant="link"
               className={`text-black text-xl cursor-pointer ${
                 selectedCity === "Périgueux" ? "underline" : ""
               }`}
               onClick={() => handleCityClick("Périgueux")}
             >
               Périgueux
-            </h2>
+            </Button>
             <h2 className="text-black text-xl">1H30</h2>
           </div>
         </div>
