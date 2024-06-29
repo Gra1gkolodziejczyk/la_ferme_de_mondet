@@ -2,10 +2,9 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Horaires from "@/components/horaires";
 import Image from "next/image";
-import { Metadata } from "next";
 import Presentation from "@/components/presentation";
 import Slider from "@/components/slider";
-import imageFerme from "@/public/image.png";
+import imageFerme from "@/public/imageFermee.png";
 
 const slides = [
   {
@@ -165,16 +164,9 @@ const Home: React.FC = () => {
     <>
       <Header />
       <div id="accueil" className="max-h-screen">
-        <div className="flex justify-center items-center content-center text-center mt-36 z-40">
-          <h1 className="mt-20 text-4xl text-yellow-200">
-            Bienvenue à la ferme de Mondet !
-          </h1>
+        <div className="flex justify-center items-center self-center content-center w-full h-auto">
+          <Image alt="la ferme de mondet | image" src={imageFerme} />
         </div>
-        <Image
-          alt="la ferme de mondet | image"
-          src={imageFerme}
-          className="bottom-0 mt-7"
-        />
       </div>
       <Horaires />
       <Presentation />

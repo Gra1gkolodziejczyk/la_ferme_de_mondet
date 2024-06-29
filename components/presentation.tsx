@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { Typography } from "@mui/material";
 import elevage from "@/public/187465019.jpg";
 
 const Presentation = () => {
