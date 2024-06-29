@@ -25,7 +25,7 @@ const Horaires = () => {
     setSelectedCity(city);
   };
   return (
-    <div className="flex flex-col md:flex-row justify-between h-auto bg-[#FFF5D0]">
+    <div className="flex flex-col md:flex-row justify-between h-auto bg-[#FFF5D0] z-10">
       <div className="w-full md:w-1/3 flex flex-col justify-center items-center text-center md:text-left md:items-start px-6 py-10">
         <div className="w-full md:w-2/3 flex flex-col">
           <h1 className="text-black text-xl mb-2 font-bold underline">
