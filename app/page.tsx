@@ -164,7 +164,7 @@ const Home: React.FC = () => {
     <>
       <Header />
       <div id="accueil" className="max-h-screen -z-10">
-        <div className="flex justify-center items-center self-center content-center w-full h-auto -z-10">
+        <div className="image-container">
           <Image alt="la ferme de mondet | image" src={imageFerme} />
         </div>
       </div>
