@@ -168,8 +168,8 @@ const Home: React.FC = () => {
           <Image
             alt="la ferme de mondet | image"
             src={imageFerme}
-            width={700}
-            height={700}
+            width={500}
+            height={500}
           />
         </div>
       </div>
