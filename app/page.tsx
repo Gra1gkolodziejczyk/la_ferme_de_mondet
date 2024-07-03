@@ -4,7 +4,7 @@ import Horaires from "@/components/horaires";
 import Image from "next/image";
 import Presentation from "@/components/presentation";
 import Slider from "@/components/slider";
-import imageFerme from "@/public/imageFermee.png";
+import imageFerme from "@/public/Design_sans_titre1.png";
 
 const slides = [
   {
@@ -165,7 +165,12 @@ const Home: React.FC = () => {
       <Header />
       <div id="accueil" className="max-h-screen -z-10">
         <div className="image-container">
-          <Image alt="la ferme de mondet | image" src={imageFerme} />
+          <Image
+            alt="la ferme de mondet | image"
+            src={imageFerme}
+            width={700}
+            height={700}
+          />
         </div>
       </div>
       <Horaires />
