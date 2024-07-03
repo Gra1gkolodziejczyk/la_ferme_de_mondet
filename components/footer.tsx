@@ -11,7 +11,7 @@ const Footer = () => {
         width={300}
         height={300}
       />
-      <div className="mt-10">Développé par CodingBros.</div>
+      <h1 className="mt-10 text-black">Développé par CodingBros.</h1>
     </div>
   );
 };
